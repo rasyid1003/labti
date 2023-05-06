@@ -6,7 +6,7 @@ int main() {
   int a, b, c;
 
 menu:
-  printf("Masukkan pilihan (1 untuk biodata, 2 untuk ganjil/genap, 3 untuk mencari nilai terbesar): ");
+  printf("Masukkan pilihan (1 untuk biodata, 2 untuk ganjil/genap, 3 Exit): ");
   scanf("%d", &pil);
 
   switch (pil) {
@@ -31,20 +31,6 @@ menu:
       }
       break;
     case 3:
-      printf("\n ==================Mencari Nilai Terbesar ==================\n");
-      printf("Masukkan nilai a :");
-      scanf("%d", &a);
-      printf("Masukkan nilai b :");
-      scanf("%d", &b);
-      printf("Masukkan nilai c :");
-      scanf("%d", &c);
-      if (a >= b && a >= c) {
-        printf("\nNilai terbesar adalah %d\n", a);
-      } else if (b >= a && b >= c) {
-        printf("\nNilai terbesar adalah %d\n", b);
-      } else {
-        printf("\nNilai terbesar adalah %d\n", c);
-      }
       break;
     default:
       printf("Maaf Menu pilihan tidak tersedia, silahkan di coba kembali\n");
