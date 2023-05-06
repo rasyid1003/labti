@@ -6,7 +6,12 @@ int main() {
   int a, b, c;
 
 menu:
-  printf("Masukkan pilihan (1 untuk biodata, 2 untuk ganjil/genap, 3 Exit): ");
+  printf("\n===============MENU==============");
+  printf("\n1. Biodata");
+  printf("\n2. Ganjil Genap");
+  printf("\n3. EXIT");
+  printf("\nPILIHAN : ");
+
   scanf("%d", &pil);
 
   switch (pil) {
@@ -29,8 +34,6 @@ menu:
       } else {
         printf("\nBilangan %d adalah Ganjil\n", a);
       }
-      break;
-    case 3:
       break;
     default:
       printf("Maaf Menu pilihan tidak tersedia, silahkan di coba kembali\n");
